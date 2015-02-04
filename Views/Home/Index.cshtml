@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{
+    var name = "Görkan Gönüldaş";
+    var cp = " Copyright by";
+    var sum=cp +" "+name;
+    var welcomeMsg = "Welcome smile dictionary";
+    }
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+                <h3>@welcomeMsg</h3>
+            </hgroup>
+         
+        </div>
+    </section>
+}
+
+<footer>
+    <p style="text-align:center; margin-top:20px; font-family:Calibri; font-style:italic;">@sum</p>
+</footer>
